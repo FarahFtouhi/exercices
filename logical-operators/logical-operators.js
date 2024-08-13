@@ -47,13 +47,19 @@ function MinLengthOfThreeWords(word1, word2, word3) {
   }
 }
 function guessMyNumber(number) {
-  let random=Math.floor(Math.random() * 5) + 1
-  if(random===number){
-    return " you guessed my word "
-
-  }
-  else{
-    return "nope!that wasnt it "
+  let random = Math.floor(Math.random() * 5) + 1;
+  if (random === number) {
+    return " you guessed my word ";
+  } else {
+    return "nope!that wasnt it ";
   }
 }
 
+function factorielle(n) {
+  let fact = 1;
+  while (n > 0) {
+    fact = fact * n;
+    n--;
+  }
+  return fact;
+}
